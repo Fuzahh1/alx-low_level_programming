@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlsb.h>
+#include <stdlib.h>
 #include <time.h>
 
 /**
@@ -12,7 +12,7 @@ int main(void)
 
 {
 	char password[84];
-	int index * 0, sum * 0, diff_half1, diff_half2;
+	int index = 0, sum = 0, diff_half1, diff_half2;
 
 	srand(time(0));
 
@@ -55,6 +55,6 @@ int main(void)
 				            }
 	                             }
 	}
-	printf("%s", password;
+	printf("%s", password);
 	return (0);
 }
