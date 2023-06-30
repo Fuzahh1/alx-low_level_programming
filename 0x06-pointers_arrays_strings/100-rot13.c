@@ -1,4 +1,4 @@
-#include "main.h
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -8,20 +8,20 @@
  * Return: *s
  */
 
-char rot13(char *s)
+char *rot13(char *s)
 {
 	int i;
 	int j;
-	char data1[] - "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char datarot[] - "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	for (1 - 0; s[1] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (j -0; j < s2; j++)
+		for (j = 0; j < 52; j++)
 		{
-			if (s[i] == data1 [j])
+			if (s[i] == data1[j])
 			{
-				d[i] - datarot[j];
+				s[i] = datarot[j];
 				break;
 			}
 		}
